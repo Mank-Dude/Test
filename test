@@ -1,10 +1,14 @@
--- test script
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local GUI = Instance.new("Frame")
 local Test = Instance.new("TextLabel")
 local Fly = Instance.new("TextButton")
 local Form = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -41,6 +45,7 @@ Fly.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc"))()
 end)
 
+
 Form.Name = "Form"
 Form.Parent = GUI
 Form.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -53,3 +58,13 @@ Form.TextSize = 30.000
 Form.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mank-Dude/WYD-FORM/main/WYD%20FORM"))()
 end)
+
+TextLabel.Parent = GUI
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.263736248, 0, 0.478494585, 0)
+TextLabel.Size = UDim2.new(0, 129, 0, 19)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "To Enable/Disable Flying click (e)"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextLabel.TextSize = 14.000
