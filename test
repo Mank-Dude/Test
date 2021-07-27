@@ -1,0 +1,55 @@
+-- test script
+
+local ScreenGui = Instance.new("ScreenGui")
+local GUI = Instance.new("Frame")
+local Test = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local Form = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GUI.BackgroundTransparency = 0.150
+GUI.Position = UDim2.new(0.33414039, 0, 0.314115316, 0)
+GUI.Size = UDim2.new(0, 273, 0, 186)
+GUI.Active = true
+GUI.Draggable = true
+
+Test.Name = "Test"
+Test.Parent = GUI
+Test.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Test.Size = UDim2.new(0, 273, 0, 28)
+Test.Font = Enum.Font.SourceSans
+Test.Text = "Gui Test"
+Test.TextColor3 = Color3.fromRGB(0, 0, 0)
+Test.TextSize = 35.000
+
+Fly.Name = "Fly"
+Fly.Parent = GUI
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.Position = UDim2.new(0.131868139, 0, 0.209677428, 0)
+Fly.Size = UDim2.new(0, 200, 0, 50)
+Fly.Font = Enum.Font.Oswald
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 255, 0)
+Fly.TextSize = 30.000
+Fly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc"))()
+end)
+
+Form.Name = "Form"
+Form.Parent = GUI
+Form.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Form.Position = UDim2.new(0.135531142, 0, 0.645161271, 0)
+Form.Size = UDim2.new(0, 200, 0, 50)
+Form.Font = Enum.Font.Nunito
+Form.Text = "Form"
+Form.TextColor3 = Color3.fromRGB(0, 255, 0)
+Form.TextSize = 30.000
+Form.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mank-Dude/WYD-FORM/main/WYD%20FORM"))()
+end)
